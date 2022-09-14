@@ -14,9 +14,9 @@
   </a>
 </p>
 
-# go-buffer
+# buffer
 
-`go-buffer` represents a buffer that asynchronously flushes its contents. It is useful for applications that need to aggregate data before writing it to an external storage. A buffer is flushed manually, or automatically when it becomes full or after an interval has elapsed, whichever comes first.
+`buffer` represents a buffer that asynchronously flushes its contents. It is useful for applications that need to aggregate data before writing it to an external storage. A buffer is flushed manually, or automatically when it becomes full or after an interval has elapsed, whichever comes first.
 
 ## Installation
 
@@ -71,7 +71,7 @@ package main
 import (
   "time"
 
-  "github.com/globocom/go-buffer/v2"
+  "github.com/ivanvanderbyl/buffer"
 )
 
 func main() {
