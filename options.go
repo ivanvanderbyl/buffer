@@ -17,7 +17,6 @@ type (
 	// Configuration options.
 	Options struct {
 		Size          uint
-		Flusher       Flusher
 		FlushInterval time.Duration
 		PushTimeout   time.Duration
 		FlushTimeout  time.Duration
@@ -32,13 +31,6 @@ type (
 func WithSize(size uint) Option {
 	return func(options *Options) {
 		options.Size = size
-	}
-}
-
-// WithFlusher sets the flusher that should be used to write out the buffer.
-func WithFlusher(flusher Flusher) Option {
-	return func(options *Options) {
-		options.Flusher = flusher
 	}
 }
 
@@ -74,9 +66,6 @@ func validateOptions(options *Options) error {
 	if options.Size == 0 {
 		return errors.New(invalidSize)
 	}
-	if options.Flusher == nil {
-		return errors.New(invalidFlusher)
-	}
 	if options.FlushInterval < 0 {
 		return fmt.Errorf(invalidInterval, "FlushInterval")
 	}
@@ -96,7 +85,6 @@ func validateOptions(options *Options) error {
 func resolveOptions(opts ...Option) *Options {
 	options := &Options{
 		Size:          0,
-		Flusher:       nil,
 		FlushInterval: 0,
 		PushTimeout:   time.Second,
 		FlushTimeout:  time.Second,
