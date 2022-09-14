@@ -4,12 +4,12 @@
   <img src="gopher.png">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/github/workflow/status/globocom/go-buffer/Go?style=flat-square">
-  <a href="https://github.com/globocom/go-buffer/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/globocom/go-buffer?color=blue&style=flat-square">
+  <img src="https://img.shields.io/github/workflow/status/ivanvanderbyl/buffer/Go?style=flat-square">
+  <a href="https://github.com/ivanvanderbyl/buffer/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/ivanvanderbyl/buffer?color=blue&style=flat-square">
   </a>
-  <img src="https://img.shields.io/github/go-mod/go-version/globocom/go-buffer?style=flat-square">
-  <a href="https://pkg.go.dev/github.com/globocom/go-buffer">
+  <img src="https://img.shields.io/github/go-mod/go-version/ivanvanderbyl/buffer?style=flat-square">
+  <a href="https://pkg.go.dev/github.com/ivanvanderbyl/buffer">
     <img src="https://img.shields.io/badge/Go-reference-blue?style=flat-square">
   </a>
 </p>
@@ -168,7 +168,7 @@ func main() {
 
 ## Documentation
 
-Visit [Pkg.go.dev](https://pkg.go.dev/github.com/globocom/go-buffer) for full documentation.
+Visit [Pkg.go.dev](https://pkg.go.dev/github.com/ivanvanderbyl/buffer) for full documentation.
 
 ## License
 
